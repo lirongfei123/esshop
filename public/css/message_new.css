@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.main_content li{
+	margin:10px 0;
+}
+.main_content .caption_label{
+	width:60px;
+	text-align:right;
+	float:left;
+}
+.main_content .kind_content{
+	width:500px;
+	float:left;
+}

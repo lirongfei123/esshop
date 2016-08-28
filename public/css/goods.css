@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+.ui_content_left .recent_scan{
+	margin-top:10px;
+	border:1px solid #ccc;
+}
+.ui_content_left .recent_scan dt{
+	height:30px;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolor=#fbfafa,endcolor=#d6d5d5,gradentType=0);
+	background:linear-gradient(#fbfafa,#d6d5d5);
+	background:-webkit-linear-gradient(#fbfafa,#d6d5d5);
+	background:-ms-linear-gradient(#fbfafa,#d6d5d5);
+	border-bottom:1px solid #ccc;
+	line-height:30px;
+	padding-left:10px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+.ui_content_left .recent_scan dd{
+	margin:5px 10px;
+}
+.ui_content_left .recent_scan dd a{
+	color:#333;
+	width:180px;
+}
+/**
+ * 右边部分
+ */
+.ui_content_right{
+	float:right;
+}
+.ui_content_right ul.goods_list li{
+	float:left;
+	margin:10px;
+	width:173px;
+	height:205px;
+}
+.ui_content_right ul.goods_list li .item .item_title{
+	width:173px;
+	height:170px;
+	border:1px solid #dcf37f;
+	text-align:center;
+	display:table-cell;
+	vertical-align: middle;
+}
+.ui_content_right ul li .item .item_title img{
+	max-width:142px;
+	max-height:166px;
+}
+.ui_content_right ul li .item dd .goods_href{
+	width:100%;
+}
+.ui_content_right ul li .item dd .goods_href:hover{
+	color:red;
+}
+.ui_content_right ul li .item dd.xiushi{
+	color:#666;
+	font-size:15px;
+}
+.ui_content_right ul li .item dd .caption{
+	color:#999;
+	font-size:12px;
+}
+.ui_content_right ul li .item dd .caption+.caption{
+	margin-left:10px;
+}
+.ui_content_right .load_more{
+	text-align:center;
+	padding:10px;
+}
+.ui_content_right .load_more span{
+	width:500px;
+	background:#F5F6F7;
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+	border:1px solid #ccc;
+	cursor:pointer;
+}
+/**
+ * 推荐内容
+ */
+.ui_content_right .tuijian_content .title{
+	width:130px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:#333;
+	font-weight:bold;
+	font-weight:"微软雅黑";
+	text-align:center;
+	border:1px solid #ccc;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#cecfce,gradientType=0);
+	background:linear-gradient(#ffffff,#cecfce);
+	background:-webkit-linear-gradient(#ffffff,#cecfce);
+	background:-ms-linear-gradient(#ffffff,#cecfce);
+	background:-o-linear-gradient(#ffffff,#cecfce);
+}
+.ui_content_right .tuijian_content .detail_content{
+	overflow:hidden;
+	border:1px solid #ccc;
+	width:773px;
+	white-space:nowrap;
+}
+.ui_content_right .tuijian_content .detail_content li{
+	margin:5px 15px;
+	vertical-align: middle;
+	text-align:center;
+	width:90px;
+}
+.ui_content_right .tuijian_content .detail_content li .detail_name{
+	width:90px;
+	white-space:normal;
+}
+.ui_content_right .tuijian_content .detail_content li img{
+	max-width:100px;
+	max-height:100px;
+}
+.ui_content_right .tuijian_content .title2{
+	margin-top:10px;
+}
+.ui_content_right .tuijian_content dd.dd2 .detail_content li{
+	margin:5px 16px;
+}
+.ui_content_right .tuijian_content dd.dd2{
+	position:relative;
+}
+.ui_content_right .tuijian_content dd.dd2 .huanyizu{
+	position:absolute;
+	top:-20px;
+	right:5px;
+}

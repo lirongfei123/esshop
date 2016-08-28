@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<script src="public/javascript/common.js"></script>
+<script type="text/javascript">
+	import_style(["public/css/lr_common.css","public/css/wantedbuy_detail.css"]);
+	//import_script(["public/javascript/Tweenli.js","public/javascript/evaluate.js"]);
+</script>
+<title>求购详情</title>
+</head>
+<body>
+{include file="top_logo.html"}
+<div id="main_body">
+	<div class="content_title">
+		求购详情
+	</div>
+	<div class="ui_content clearfix">
+		<div class="ui_content_left">
+			{include file="goods_classify.html"}
+		</div>
+		<div class="ui_content_right">
+			<div  class="wantedbuy_info">
+			<input type="hidden" id="goods_id" value="{$result.wanted_id}" />
+			<table cellspacing="0" cellpadding="0"><tbody>
+					<tr>
+						<td>
+							商品名:
+						</td>
+						<td>
+							{$result.wanted_name}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							心愿价:
+						</td>
+						<td>
+							{if $result.wanted_price == 0}面谈{else} {$result.wanted_price}元{/if}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							发布者:
+						</td>
+						<td>
+							<a style="color:#333;" href="?seeuser!seeUser.html?username={$result.wanted_ower}">{$result.wanted_ower}</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							求购时间:
+						</td>
+						<td>
+							{$result.wanted_time}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							联系方式:
+						</td>
+						<td>
+							<ul class="content_way">
+								<li>
+									<span class="inline_block caption">手机:</span>
+									<span class="inline_block detail">{$result.user_tel}</span>
+								</li>
+								<li>
+									<span class="inline_block caption">QQ:</span>
+									<span class="inline_block detail">{$result.user_qq}</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+			</tbody></table>
+			</div>
+			<div class="evaluate_content">
+				{include file="evaluate.html"}
+			</div>
+		</div>
+	</div>
+</div>
+{include file="footer.html"}
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<script src="public/javascript/common.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/center_common.css" />
+<link rel="stylesheet" type="text/css" href="public/javascript/uploadify/uploadify.css" />
+<link rel="stylesheet" type="text/css" href="public/css/newproduce.css" />
+<script type="text/javascript">
+	import_script(["public/javascript/kindeditor/kindeditor-min.js",
+	               "public/javascript/kindeditor/lang/zh_CN.js",
+	               "public/javascript/uploadify/jquery.uploadify.min.js",
+	               "public/javascript/newproduce.js",
+	               "public/javascript/formcheck/formcheck.js"]);
+</script>
+<title>发布商品</title>
+</head>
+<body>
+<div id="main_body">
+	<div class="title">
+		<span class="caption">发布商品</span>
+	</div>
+	<ul class="produce_form">
+		<form action="" method="get" id="myform" name="myform">
+			<li>
+				<span class="label">商品图片:</span>
+				<div class="upload_content inline_block">
+					<input type="hidden" name="produce_face" />
+					<ul class="img_content" id="img_content">
+						
+					</ul>
+					<div class="file_content">
+						<input id="my_uploadify" name="my_uploadify" class="inline_block" type="file" multiple="false" />
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="label">商品名称:</span>
+				<input type="text" name="goods_name" class="must" prompt="请输入商品名称" placeholder="请输入商品名称" />
+			</li>
+			<li>
+				<span class="label">一句话描述:</span>
+				<input type="text" name="onesay" class="must" prompt="请用一句话描述你的商品" placeholder="请用一句话描述你的商品" />
+				<div class="onesay_content">如:全新;九成新;有发票;无划痕</div>
+			</li>
+			<li>
+				<span class="label">分类:</span>
+				<select name="goods_type">
+					<option value="2">电子产品</option>
+					<option value="1">二手书</option>
+					<option value="3">生活用品</option>
+					<option value="0">其他</option>
+				</select>
+			</li>
+			<li>
+				<span class="label">价格:</span>
+				<input type="text" name="price" class="must" prompt="请输入商品价格" placeholder="请输入商品价格" />
+			</li>
+			<li>
+				<span class="label">商品名称:</span>
+				<div class="editor_content inline_block">
+					<textarea name="kind_textarea" id="prduce_detail" class="must" prompt=" " placeholder=" "></textarea>
+				</div>
+			</li>
+			<li>
+				<input type="submit" value="提交" />
+			</li>
+		</form>
+	</ul>
+</div>
+</body>
+</html>

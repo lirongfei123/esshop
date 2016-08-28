@@ -1,0 +1,167 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+html,body{ 
+	margin:0px; 
+	background:#fff;
+} 
+html body{
+	margin:0;
+	padding:0;	
+	width:100%;
+	font-size:13px;
+}
+#main_body,#search,.margin_center{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+ul{
+	margin:0px;
+	padding:0px;	
+}
+ul li{
+	list-style:none;	
+}
+dl{
+	margin:0;	
+}
+dl dd{
+	margin:0;
+}
+/*省略号*/
+.addDian{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	word-wrap:normal;
+}
+.clear{
+	height:0px;
+	clear:both;	
+}
+/*零宽度空格*/
+.clearfix:after {content:"\200B"; display:block;height:0;line-height:0; clear:both; }
+.clearfix { *zoom:1; }
+/*图片衔接去除边框*/
+a.a_img{
+	outline:none;
+    star:expression(this.onfocus=this.blur());
+	color:#EEEBEE;
+}
+img{
+	border:0;	
+}
+a{
+	cursor:pointer;
+	text-decoration:none;	
+}
+a.black{
+	color:#333;	
+}
+a:hover{
+	text-decoration:underline;	
+}
+/*表格*/
+table{
+	border-spacing:0;
+	border-collapse:collapse;	
+}
+/*form的样式*/
+form span.label{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	text-align:right;
+}
+.inline_block{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+/*公共的搜索导航*/
+#top_daohang{
+	height:35px;
+	width:100%;
+	background:url("../images/index_top.png") top left repeat-x;
+	line-height:30px;
+	text-align:right;
+}
+#top_daohang .title{
+	margin-right:10px;
+}
+#search{
+	height:85px;
+	margin-bottom:2px;
+}
+#search li{
+	float:left;
+}
+#search li .a_img{
+	height:81px;
+	width:130px;
+	background:url(../images/logo.png) center center no-repeat;
+}
+#search .btn a{
+	width:131px;
+	height:30px;
+	background:url("../images/index_qiugou.png") top left no-repeat;
+	display:block;
+	margin:5px;
+	margin-left:43px;
+	cursor:pointer;
+}
+#search .btn a+a{
+	background:url("../images/index_tiaosao.png") top left no-repeat;
+}
+#search .search{
+	margin:15px 0 0 40px;
+	height:30px;
+	border:3px solid #ee1414;
+	width:626px;
+	float:right;
+}
+#search .search{
+	position:relative;
+}
+#search .search .radio{
+	position:absolute;
+	bottom:-25px;
+	left:0px;
+}
+#search .search input[type='text']{
+	width:506px;
+	margin-top:5px;
+	text-indent:5px;
+	font-size:16px;
+	border:0;
+	background:#fff;
+}
+#search .search input[type='submit']{
+	background-color:#dcd91d;
+	height:30px;
+	width:107px;
+	border:0;
+	float:right;
+}
+/*图片居中*/
+.img_middle_vertical{
+	height:100%;
+	width:0px;
+	vertical-align:middle;
+}
+.img_middle_background{
+	height:100%;
+	width:100%;
+	background:url() center center no-repeat;
+}
+.main_footer{
+	clear:both;
+	text-align:center;
+	padding:20px;
+	font-size:12px;
+	color:#333;
+}
+.main_footer img{
+	vertical-align: middle;
+}

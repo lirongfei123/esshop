@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+.ui_content_right{
+	border:1px solid #ccc;
+}
+.ui_content_right dt{
+	margin-left:1px;
+	width:130px;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	color:#333;
+	font-weight:bold;
+	font-weight:"微软雅黑";
+	text-align:center;
+	border:1px solid #ccc;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#cecfce,endcolorstr=#ffffff,gradientType=0);
+	background:linear-gradient(#cecfce,#ffffff);
+	background:-webkit-linear-gradient(#cecfce,#ffffff);
+	background:-ms-linear-gradient(#cecfce,#ffffff);
+	background:-o-linear-gradient(#cecfce,#ffffff);
+}
+.ui_content_right dd{
+	margin-bottom:5px;
+}
+.ui_content_right table{
+	width:100%;
+}
+.ui_content_right table thead th{
+	font-weight:100;
+	color:#999;
+	padding:5px 5px;
+	border-bottom:1px solid #333;
+}
+.ui_content_right table thead th.th1{
+	padding-left:15px;
+	width:250px;
+}
+.ui_content_right table tbody td{
+	height:30px;
+	vertical-align: middle;
+}
+.ui_content_right table tbody td.td1{
+	font-size:15px;
+	padding-left:15px;
+}
+.ui_content_right table tbody td.td1 a{
+	width:180px;
+}
+.ui_content_right table tbody td.td2{
+	color:red;
+}
+/**
+ * 分页
+ */
+.page_manager{
+	text-align:right;
+	padding-top:10px;
+	padding-right:20px;
+}

@@ -1,0 +1,177 @@
+@CHARSET "UTF-8";
+#chatroom .title{
+	width:125px;
+	height:34px;
+	line-height:34px;
+	color:#fff;
+	font-size:15px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	text-align:center;
+	background:url("../images/index_liaotian_logo.png") top left repeat-x;
+}
+#chatroom .content{
+	border:1px solid #dedbdb;
+}
+#chatroom .content .info_content{
+	height:200px;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+#chatroom .content . span,#chatroom .content .info_content img{
+	vertical-align:middle;
+}
+#info_content img{
+	width:60px;
+	height:60px;
+}
+#chatroom .content .info_content span.user{
+	margin-right:5px;
+	color:blue;
+}
+#chatroom .content .info_content li{
+	margin:3px 0;
+}
+#chatroom .content .split{
+	height:26px;
+	background:url("../images/index_liaotian_fenge.png") top left repeat-x;
+}
+/*表情容器的样式*/
+#chatroom .content .split .edit_item{
+	position:relative;
+	width:50px;
+}
+#chatroom .content .split .edit_item .face_content{
+	padding:10px 0 0 0;
+	width:250px;
+	position:absolute;
+	bottom:22px;
+	z-index:2;
+}
+#face_img_content{
+	height:200px;
+	overflow:hidden;
+	overflow-y:scroll;
+	background-color: #fff;
+}
+#face_img_content img{
+	cursor:pointer;
+	margin:2px;
+	width:60px;
+	height:60px;
+}
+#face_img_content img:hover{
+	border:1px solid #b4c524;
+}
+#chatroom .content .split .edit_item .face_content{
+	display:none;
+}
+#chatroom .content .split .edit_item:hover .face_content{
+	display:block;
+}
+#chatroom .content .split .face_title{
+	background-color:#ddd6d6;
+}
+#chatroom .content .split .face_title .face_item{
+	float:left;
+	margin-right:3px;
+	cursor:pointer;
+}
+/*编辑框的样式*/
+#chatroom .content .info_edit{
+	height:80px;
+	position:relative;
+}
+#chatroom .content .info_edit iframe{
+	height:100%;
+	width:962px;
+}
+#chatroom .content .info_edit button{
+	position:absolute;
+	height:80px;
+	width:60px;
+	right:0px;
+}
+/**
+ * 各种商品展示
+ */
+.classify_title{
+	font-size:18px;
+	padding-left:3px;
+	margin:4px 0;
+}
+.classify_title .sanjiao{
+	border-width:6px;
+	border-color:#149bcc;
+	border-style:solid;
+	border-top-color:transparent;
+	border-bottom-color:transparent;
+	border-right:0;
+	display:inline-block;
+	text-indent:-100px;
+	*display:inline;
+	*zoom:1;
+	content:"";
+	margin-right:6px;
+}
+.ui_list{
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+.ui_list .list_title{
+	height:30px;
+	line-height:30px;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#f5f5f5,endcolorstr=#d8d7d7);
+	background:linear-gradient(#f5f5f5,#d8d7d7);
+	background:-webkit-linear-gradient(#f5f5f5,#d8d7d7);
+	background:-ms-linear-gradient(#f5f5f5,#d8d7d7);
+	border-bottom:1px solid #ccc;
+}
+.ui_list .list_title .list_more{
+	float:right;
+	padding-right:5px;
+	font-size:12px;
+	color:#666;
+}
+.ui_list .list_title .caption{
+	font-size:15px;
+	height:30px;
+	line-height:30px;
+	width:200px;
+	padding-left:10px;
+	color:#fff;
+	font-weight:bold;
+	background:url(../images/index_list_title.png) top left no-repeat;
+}
+.ui_list .list_content .list_item{
+	float:left;
+	margin:5px 28px;
+}
+.ui_list .list_content .list_item .qiugou_title{
+	width:350px;
+	vertical-align:middle;
+	margin-right:20px;
+}
+.ui_list .list_content .list_item .time{
+	height:20px;
+	line-height:20px;
+}
+.ui_list .list_content .tiaosao_item{
+	text-align:center;
+	margin:10px 21px;
+}
+.ui_list .list_content .tiaosao_item img{
+	width:100px;
+	height:120px;
+}
+.ui_list .list_content .tiaosao_item .detail_info{
+	text-align:center;
+}
+.ui_list .list_content .tiaosao_item .detail_info .name{
+	width:100px;
+	font-size:12px;
+	color:#333;
+}
+.ui_list .list_content .tiaosao_item .detail_info .price{
+	color:red;
+}

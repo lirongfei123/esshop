@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+.produce_item{
+	margin:10px 10px;
+}
+.wanted_name{
+	background:#42e679;
+	width:250px;
+	min-height:100px;
+	padding:10px;
+	border-radius:8px;
+}
+#produce_list .group_item .produce_detail{
+	visibility:hidden;
+	position:absolute;
+	top:40px;
+}
+#produce_list .group_item .produce_item:hover .produce_detail{
+	left:300px;
+	visibility:visible;
+}

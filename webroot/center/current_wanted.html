@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>收藏夹</title>
+<script src="public/javascript/common.js"></script>
+<script type="text/javascript">
+	import_style(["public/css/center_common.css",
+	              "public/css/current_wanted.css"]);
+	import_script(["public/javascript/current_wanted.js"]);
+</script>
+</head>
+<body>
+<div id="main_body">
+	<div class="title">
+		<span class="caption">已经购买的商品</span>
+	</div>
+	<ul class="main_content clearfix" id="produce_list">
+		{if $wanteds|@count == 0 }
+			<li>
+				暂时还没有要求购的商品,赶快去发布一个吧
+			</tr>
+		{/if}
+		{foreach $wanteds as $wanted}
+		<li class="list_item">
+			<a href="?wantedbuy!wantedbuy_detail.html?id={$wanted.wanted_id}" target="_top" class="wanted_name">{$wanted.wanted_name}</a>
+			<span class="time">{$wanted.wanted_time}</span>
+			<div class="handle inline_block">
+				<a href="javascript:;" onclick="mark_old(this,'{$wanted.wanted_id}','')">标记为已购买</a>
+				<a href="javascript:;" onclick="del_wanted(this,'{$wanted.wanted_id}')">删除</a>
+			</div>
+		</li>
+		{/foreach}
+	</ul>
+</div>
+</body>
+</html>

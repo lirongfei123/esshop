@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+.goods_classify{
+	background:#fcf4ea;
+	width:215px;
+	min-height:300px;
+}
+.goods_classify dt{
+	height:35px;
+	line-height:35px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#f93838,endcolorstr=#ad0101,gradientType=0);
+	background:linear-gradient(#f93838,#ad0101);
+	background:-webkit-linear-gradient(#f93838,#ad0101);
+	background:-ms-linear-gradient(#f93838,#ad0101);
+	background:-o-linear-gradient(#f93838,#ad0101);
+	color:#fff;
+	font-size:16px;
+	padding-left:10px;
+	font-weight:bold;
+}
+.goods_classify .content_detail dd{
+	height:26px;
+	line-height:26px;
+	border-bottom:1px solid #fefefe;
+	text-align:center;
+}
+.goods_classify .content_detail dd a{
+	color:#333;
+	display:list-item;
+	width:30px;
+	margin:0 auto;
+	list-style: disc;
+}

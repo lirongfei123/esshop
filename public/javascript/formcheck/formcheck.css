@@ -1,0 +1,22 @@
+/* CSS Document */
+form span.label{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:100px;
+	height:100%;
+	vertical-align:top;
+	text-align:right;	
+}
+form span.info{
+	font-size:12px;
+	padding-left:10px;
+}
+form span.right{
+	font-size:12px;
+	padding-left:10px;
+}
+form span.error{
+	font-size:12px;
+	padding-left:10px;
+}

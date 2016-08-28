@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>我的个人中心</title>
+<script src="public/javascript/common.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/center.css" />
+<script src="public/javascript/center.js"></script>
+</head>
+<body>
+<div class="top_bar">
+	<span><a href="index.php">首页</a>欢迎你,
+	<div class="inline_block username">
+		<span>{$username}</span>
+		<ul class="modify">
+			<li><a href="?center-center!modify_psd.html" target="detail_iframe">修改密码</a></li>
+			<li><a href="?center-center!modify_info.html" target="detail_iframe">修改资料</a></li>
+		</ul>
+	</div>
+	<a style='margin-left:5px' href="javascript:common_loginout()">注销</a></span>
+	<a href="?center-center!newbuy.html" target="detail_iframe">发布求购信息</a>
+	<a href="?center-center!newproduce.html" target="detail_iframe">发布二手商品</a>
+</div>
+<div class="margin_center">
+	<a href="?center-center!person_center.html" class="logo">
+		<img class="img_middle_background" src="public/images/transparent.png" style="background-image:url(public/images/center_logo.png);" />
+	</a>
+	<ul class="menu">
+		<li><a href="?center-message!message.html" target="detail_iframe" class="inline_block">消息中心</a></li>
+		<li><a href="?center-goodadmin!current_produce.html" target="detail_iframe" class="inline_block">正在出售的商品</a></li>
+		<li><a href="?center-goodadmin!old_produce.html" target="detail_iframe" class="inline_block">卖出的宝贝</a></li>
+		<li><a href="?center-wantedadmin!current_wanted.html" target="detail_iframe" class="inline_block">正在求购的商品</a></li>
+		<li><a href="?center-wantedadmin!old_wanted.html" target="detail_iframe" class="inline_block">求购到的宝贝</a></li>
+	</ul>
+</div>
+<div id="main_body">
+	<iframe id="detail_iframe" name="detail_iframe" scrolling="no" frameborder="0" width=100% height="200px" src="{$frame}"></iframe>
+</div>
+{include file="footer.html"}
+</body>
+</html>

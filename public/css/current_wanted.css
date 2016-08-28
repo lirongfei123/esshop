@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+#main_body .main_content .list_item{
+	list-style:disc;
+	margin:10px 25px;
+}
+#main_body .main_content .list_item .wanted_name{
+	color:#333;
+	font-size:15px;
+}
+#main_body .main_content .list_item .time{
+	color:#999;
+}
+#main_body .main_content .list_item .handle{
+	visibility:hidden;
+}
+#main_body .main_content .list_item:hover .handle{
+	visibility:visible;
+}

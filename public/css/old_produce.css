@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+#main_body{
+	position:relative;
+}
+#produce_list{
+	border-left:1px solid #666;
+	margin-left:100px;
+	padding:10px;
+}
+#produce_list .group_item{
+	position:relative;
+	margin-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+#produce_list .group_item .group_title{
+	position:absolute;
+	left:-90px;
+}
+#produce_list .group_item .produce_img{
+	width:90px;
+	height:90px;
+	box-shadow:0 1px 5px 1px #ccc;
+	border:1px solid #ccc;
+	margin:3px;
+}
+#produce_list .group_item .produce_item{
+	position:relative;
+	z-index:20;
+}
+#produce_list .group_item .produce_detail{
+	visibility:hidden;
+	position:absolute;
+	left:90px;
+	top:10px;
+}
+#produce_list .group_item .produce_item:hover .produce_detail{
+	left:130px;
+	visibility:visible;
+}

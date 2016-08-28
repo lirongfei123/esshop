@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>我的个人中心</title>
+<script src="public/javascript/common.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/center_common.css" />
+<link rel="stylesheet" type="text/css" href="public/css/message_new.css" />
+<script type="text/javascript">
+	import_script(["public/javascript/kindeditor/kindeditor-min.js","public/javascript/message_new.js"]);
+</script>
+</head>
+<body>
+<div id="main_body">
+	<div class="title">
+		<span class="caption">回复消息</span>
+	</div>
+	<div class="main_content">
+		<ul><form name="message_new">
+			<li>
+				<label class="clearfix">
+					<span class="caption_label">收件人:</span>
+					<input value="{$message.sender}" name="receiver" type="text" disabled />
+					<input value="{$username}" name="sender" type="hidden" />
+				</label>
+			</li>
+			<li>
+				<label class="clearfix">
+					<span class="caption_label">主题:</span>
+					<input type="text" value="{$message.subject}" name="subject" type="subject" style="width:523px;" />
+				</label>
+			</li>
+			<li style="min-height:200px;">
+				<label class="clearfix">
+					<span class="caption_label">回复内容:</span>
+					<div class="kind_content">
+						<textarea name="kind_textarea" cols="60" rows="10">
+							{$message.message}
+						</textarea>
+					</div>
+				</label>
+			</li>
+			<li>
+				<input type="submit" value="回复" />
+			</li>
+		</form></ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>{$result.username}的信息</title>
+<script src="public/javascript/common.js"></script> 
+<link rel="stylesheet" type="text/css" href="public/javascript/formcheck/formcheck.css" />
+<link rel="stylesheet" type="text/css" href="public/css/user.css" />
+<link rel="stylesheet" type="text/css" href="public/javascript/windows/li_window.css" />
+<script type="text/javascript">
+	import_script(["public/javascript/kindeditor/kindeditor-min.js",
+	               "public/javascript/kindeditor/lang/zh_CN.js",
+	               "public/javascript/windows/li_window.js",
+	               "public/javascript/user.js"]);
+</script>
+</head>
+<body>
+{include file="top_logo.html"}
+<div id="main_body">
+	<div class="user_title">
+		lirongfei的信息
+	</div>
+	<ul class="ui_content">
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				<img src="{$result.user_face}" />
+			</div>
+			<div id="scan_user" class="ui_item_right person_title">
+				{$result.username}
+			</div>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				注册时间:
+			</div>
+			<div class="ui_item_right">
+				{$result.register_time}
+			</div>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				卖出商品:
+			</div>
+			<dl class="ui_item_right">
+				<dt class="open_detail">+展开</dt>
+			 	<div class="detail_content">
+			 		{if $already_sells|count ==0}
+			 			<font color="red">无</font>
+			 		{/if}
+				 	{foreach $already_sells as $item}
+				 	<dd><a href="?goods!goods_detail.html?goods_id={$item.goods_id}">{$item.name}</a></dd>
+				 	{/foreach}
+			 	</div>
+			</dl>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				正在出售的商品:
+			</div>
+			<dl class="ui_item_right">
+				<dt class="open_detail">+展开</dt>
+				<div class="detail_content">
+			 		{if $now_sells|count ==0}
+			 			<font color="red">无</font>
+			 		{/if}
+			 		{foreach $now_sells as $item}
+			 		<dd><a href="?goods!goods_detail.html?goods_id={$item.goods_id}">{$item.name}</a></dd>
+			 		{/foreach}
+			 	</div>
+			</dl>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				求购的商品:
+			</div>
+			<dl class="ui_item_right">
+				<dt class="open_detail">+展开</dt>
+				<div class="detail_content">
+					{if $already_buys|count ==0}
+			 			<font color="red">无</font>
+			 		{/if}
+			 		{foreach $already_buys as $item}
+			 		<dd><a href="?wantedbuy!wantedbuy_detail.html?id={$item.wanted_id}">{$item.wanted_name}</a></dd>
+			 		{/foreach}
+			 	</div>
+			</dl>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				正在求购的商品:
+			</div>
+			<dl class="ui_item_right">
+				<dt class="open_detail">+展开</dt>
+			 	<div class="detail_content">
+				 	{if $now_buys|count ==0}
+			 			<font color="red">无</font>
+			 		{/if}
+			 		{foreach $now_buys as $item}
+			 		<dd><a href="?wantedbuy!wantedbuy_detail.html?id={$item.wanted_id}">{$item.wanted_name}</a></dd>
+			 		{/foreach}
+			 	</div>
+			</dl>
+		</li>
+		<li class="ui_item clearfix">
+			<div class="ui_item_left">
+				发短消息:
+			</div>
+			<div class="ui_item_right">
+				<div>
+					<label>消息主题<input id="message_subject" type="text" size="30" name="subject" /></label>
+				</div>
+				<textarea name="send_message" rows="10" cols="50"></textarea>
+			</div>
+			<div class="send_btn clear">
+				<input type="button" value="发送" onclick="go_send_message()" />
+			</div>
+		</li>
+	</ul>
+</div>
+<div id="login_content" style="display:none;">
+	<form action="#" name="login_form" method="post">
+		<p>
+			<label>
+				<span class="label">用户名</span>
+				<input type="text" name="login_username" />
+			</label>
+		</p>
+		<p>
+			<label>
+				<span class="label">密码</span>
+				<input type="password" name="login_password" />
+			</label>
+		</p>
+		<p>
+			<input type="submit" value="登录" />
+		</p>
+	</form>
+</div>
+{include file="footer.html"}
+</body>
+</html>

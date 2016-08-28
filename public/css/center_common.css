@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+html body{
+	padding-bottom:30px;
+}
+#main_body>.title{
+	height:25px;
+	background-color:#f0f0f0;
+	line-height:25px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	padding-left:5px;
+}
+#main_body .main_content{
+	width:958px;
+	padding:0 20px;
+	border:1px solid #ccc;
+	padding-bottom:20px;
+}
+.main_content .handle_title{
+	padding:10px 0 0 0px;
+}

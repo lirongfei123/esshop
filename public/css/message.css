@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+/*按钮的样式*/
+.button{
+	padding:3px 15px;
+	border:1px solid #ccc;
+	background:linear-gradient(#fff,#ebebeb 90%,#f3f3f3 100%);
+	background:-webkit-linear-gradient(#fff,#ebebeb 90%,#f3f3f3 100%);
+	background:-ms-linear-gradient(#fff,#ebebeb 90%,#f3f3f3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ffffff,endcolorstr=#ebebeb,gradientType=0);
+	cursor:pointer;
+	color:#020101;
+	font-size:14px;
+	margin:3px 0;
+}
+/*留言title*/
+.main_content table{
+	width:100%;
+	margin-top:3px;
+}
+.main_content table .col_zero{
+	width:23px;
+}
+.main_content table .col_one{
+	width:50px;
+}
+.main_content table .col_three{
+	width:120px;
+}
+.main_content table .col_four{
+	width:160px;
+}
+.main_content table thead tr{
+	background:#f8f8f8;
+	border:1px solid #ccc;
+	height:22px;
+}
+.main_content table thead tr th{
+	border-right:2px solid #bab8b8;
+	padding-left:5px;
+	color:#999999;
+}
+/*留言列表*/
+.main_content table tbody tr{
+	background-color:#effdfc;
+	height:24px;
+	border-bottom:1px solid #abfaf2;
+}
+.main_content table tbody tr.even{
+	background-color:#fff;
+}
+.main_content table tbody tr td{
+	vertical-align:middle;
+}
+.main_content table tbody tr td .mail_state{
+	width:55px;
+	height:14px;
+	background:url(../images/mail_state.png) center 3px no-repeat;
+}
+.main_content table tbody tr td .already{
+	background:url(../images/mail_state.png) center -13px no-repeat;
+}
+.main_content table tbody tr td{
+
+}

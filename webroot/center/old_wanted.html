@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>已经购买的商品</title>
+<script src="public/javascript/common.js"></script>
+<link rel="stylesheet" href="public/css/center_common.css" type="text/css" />
+<link rel="stylesheet" href="public/css/old_produce.css" />
+<link rel="stylesheet" href="public/css/old_wanted.css" />
+<script src="public/javascript/current_wanted.js"></script>
+<script src="public/javascript/old_wanted.js"></script>
+</head>
+<body>
+<div id="main_body">
+	<div class="title">
+		<span class="caption">已经购买的商品</span>
+	</div>
+	<div id="produce_list">
+	{if $final_result|@count == 0 }
+	<div>
+		暂时还没有历史记录
+	</div>
+	{/if}
+	{foreach $final_result as $item}
+		<dl class="group_item">
+			<dt class="group_title">{$item.mouth}</dt>
+			{foreach $item.result as $wanted}
+			<dd class="produce_item">
+				<div class="wanted_name">
+					<a href="?wantedbuy!wantedbuy_detail.html?id={$wanted.wanted_id}" target="_top">{$wanted.wanted_name}</a>
+				</div>
+				<ul class="produce_detail">
+					<li><span>求购时间：</span>{$wanted.wanted_time}</li>
+					<li><span>求购价格：</span>{$wanted.wanted_price}元</li>
+					<a href="javascript:;" onclick="del_wanted(this,'{$wanted.wanted_id}')">删除</a>
+				</ul>
+			</dd>
+			{/foreach}
+		</dl>
+	{/foreach}
+		<div class="clear"></div>
+	</div>
+</div>
+</body>
+</html>

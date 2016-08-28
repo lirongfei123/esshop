@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+#evaluate_menu_content{
+	position:relative;
+	border-bottom:6px solid #a4ef37;
+}
+#evaluate_menu_content li{
+	float:left;
+	height:30px;
+	line-height:30px;
+	width:70px;
+	padding:0 10px;
+	text-align:center;
+	z-index:12;
+	cursor:pointer;
+	font-size:16px;
+	font-weight:bold;
+}
+#evaluate_menu_content li.focus_menu{
+	color:#7aa748;
+}
+#evaluate_menu_content .focus_elem{
+	position:absolute;	
+	z-index:0;
+	height:6px;
+	width:90px;
+	background:#f17e46;
+	top:30px;
+	left:0px;
+}
+/**
+ * 详情
+ */
+#goods_detail_display{
+	padding:10px;
+}
+#goods_detail_display img{
+	max-width:700px;
+}
+#evaluate_detail_display{
+	display:none;
+	padding:5px;
+}
+#evaluate_detail_display .evaluate_item{
+	margin:5px 0;
+}
+#evaluate_detail_display .caption{
+	float:left;
+	width:30px; 
+	height:30px;
+	border:1px solid #ccc;
+	padding:3px;
+}
+#evaluate_detail_display .caption img{
+	width:30px; 
+	height:30px;
+}
+#evaluate_detail_display .detail{
+	float:left;
+	padding-left:10px;
+}
+#evaluate_detail_display .detail .person_info{
+	color:#666;
+}
+#evaluate_detail_display .detail .person_info .person_name{
+	font-size:14px;
+	font-weight:bold;
+	color:#999;
+}
+#evaluate_detail_display .detail .person_info a{
+	color:#3E62A6;
+	font-size:14px;
+	padding-left:5px;
+}
+#evaluate_detail_display .detail .evaluate_detail{
+	color:#0000AA;
+	font-size:14px;
+	padding:8px 3px;
+}
+/**
+ * 发表评论
+ */
+#reply_evaluate_content{
+	display:none;
+}

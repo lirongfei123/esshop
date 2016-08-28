@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>求购市场</title>
+<script src="public/javascript/common.js"></script>
+<script type="text/javascript">
+	import_style(["public/css/lr_common.css","public/css/wantedbuy.css","public/css/goods.css"]);
+	import_script(["public/javascript/search_common.js","public/javascript/wantedbuy_search.js"]);
+</script>
+</head>
+<body>
+{include file="top_logo.html"}
+<div id="main_body">
+<div class="content_title">
+	求购市场
+</div>
+<div class="ui_content clearfix">
+	<div class="ui_content_left">
+		{include file="goods_classify.html"}
+	</div>
+	<dl class="ui_content_right">
+		<dt style="width:250px;">
+			为你找到以下符合条件的商品
+		</dt>
+		<dd class="content_detail">
+			<table cellspacing="0" cellpadding="0"><thead>
+					<th class="th1">商品名</th>
+					<th>心愿价</th>
+					<th>浏览次数</th>
+					<th>用户</th>
+					<th>发布时间</th>
+				</thead><tbody id="wantedbuy_list">
+				{foreach $result as $item}
+					<tr>
+						<td class="td1"><a href="?wantedbuy!wantedbuy_detail.html?id={$item.wanted_id}" class="inline_block addDian">{$item.wanted_name}</a></td>
+						<td class="td2">{$item.wanted_price}元</td>
+						<td>{$item.wanted_scans}次</td>
+						<td class="td4">{$item.wanted_ower}</td>
+						<td>{$item.wanted_time}</td>
+					</tr>
+				{/foreach}
+				</tbody>
+			</table>
+			<div class="load_more"><span nums="15" class="inline_block" id="load_more_goods">正在加载...</span></div>
+		</dd>
+	</dl>
+</div>
+</div>
+{include file="footer.html"}
+</body>
+</html>

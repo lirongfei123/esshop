@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>收藏夹</title>
+<script src="public/javascript/common.js"></script>
+<script src="public/javascript/current_produce.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/center_common.css" />
+<link rel="stylesheet" type="text/css" href="public/css/current_produce.css" />
+</head>
+<body>
+<div id="main_body">
+	<div class="title">
+		<span class="caption">已经购买的商品</span>
+	</div>
+	<ul class="main_content clearfix" id="produce_list">
+		{if $goods|@count == 0 }
+			<li>
+				暂时还没有商品哦,赶快去发布一个吧
+			</li>
+		{/if}
+		{foreach $goods as $good}
+		<li class="collect_item">
+			<dl>
+				<dt>
+					<img src="{$good.face}" />
+					<div class="handle clearfix">
+						<a href="javascript:;" onclick="mark_old(this,'{$good.goods_id}')">标记为已完成</a>
+						<span class="inline_block" onclick="del_good(this,'{$good.goods_id}')"></span>
+					</div>
+				</dt>
+				<dd><a href="?goods!goods_detail.html?goods_id={$good.goods_id}" target="_top">{$good.name}</a></dd>
+				<dd class="price">{$good.price}</dd>
+			</dl>
+		</li>
+		{/foreach}
+	</ul>
+</div>
+</body>
+</html>

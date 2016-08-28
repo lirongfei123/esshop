@@ -1,0 +1,6 @@
+{foreach $like_goods as $good}
+	<li class="inline_block">
+		<img src="{$good.face}" />
+		<div class="detail_name"><a href="?goods!goods_detail.html?goods_id={$good.goods_id}" class="black">{$good.name}</a></div>
+	</li>
+{/foreach}

@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+/*消息详细*/
+.message_detail_content .handle_title{
+	margin-bottom:10px;
+}
+.message_detail{
+	padding:0px 10px 10px 10px;
+	background-color:#f3f3f3;
+}
+.message_detail .detail_title{
+	height:30px;
+	line-height:30px;
+}
+.message_detail .detail_content{
+	border:1px solid #BCBCBC;
+	text-indent:2em;
+	padding:10px 0;
+}

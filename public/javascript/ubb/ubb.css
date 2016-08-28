@@ -1,0 +1,91 @@
+/* CSS Document */
+.ubbeditor{
+	padding-top:23px;
+	position:relative;
+}
+.ubbeditor .operate{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:15px;
+}
+.ubbeditor .operate span{
+	position:relative;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	width:23px;
+	height:20px;
+	border:1px solid transparent;
+	margin:0 1px;
+	cursor:pointer;
+}
+.ubbeditor .operate span:hover{
+	border:1px solid #CCC;	
+}
+/**/
+.ubbeditor .operate span.b{
+	background:url(editor.png) -296px 5px no-repeat;
+}
+.ubbeditor .operate span.i{
+	background:url(editor.png) -320px 5px no-repeat;
+}
+.ubbeditor .operate span.u{
+	background:url(editor.png) -343px 5px no-repeat;
+}
+.ubbeditor .operate span.a{
+	background:url(editor.png) -395px 5px no-repeat;
+}
+.ubbeditor .operate span.lr{
+	background:url(editor.png) -121px 4px no-repeat;
+}
+.ubbeditor .operate span.rl{
+	background:url(editor.png) -146px 4px no-repeat;
+}
+.ubbeditor .operate span.h{
+	width:25px;
+	background:url(editor.png) -173px 4px no-repeat;
+}
+.ubbeditor .operate span.f{
+	width:21px;
+	background:url(editor.png) -198px 4px no-repeat;
+}
+.ubbeditor .operate span.s{
+	width:25px;
+	background:url(editor.png) -223px 4px no-repeat;
+}
+.ubbeditor .operate span.face{
+	width:25px;
+	background:url(editor.png) -370px 2px no-repeat;
+}
+.ubbeditor .operate span.color{
+	width:23px;
+	background:url(editor.png) -246px 4px no-repeat;
+}
+.ubbeditor .operate span.bgcolor{
+	width:25px;
+	background:url(editor.png) -272px 2px no-repeat;
+}
+/*弹出框的样式*/
+.ubbeditor .operate span .detail{
+	position:absolute;
+	top:21px;
+	left:-1px;
+	width:200px;
+	border:1px solid #CCC;
+	z-index:10px;
+	background:#fff;
+	visibility:hidden;
+}
+.ubbeditor .operate span.face .detail{
+	width:400px;	
+}
+.ubbeditor .operate span table.detail{
+	width:150px;
+	height:100px;
+	border-spacing:0;
+	border-collapse:collapse;	
+}
+.ubbeditor .operate span table.detail td{
+	border:1px solid #FFF;
+}

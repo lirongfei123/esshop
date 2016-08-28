@@ -1,0 +1,10 @@
+.register_form_content{
+	padding:20px 0;
+}
+textarea[name="miaoshu"]{
+	width:400px;
+	height:150px;
+}
+form li{
+	margin:5px 0;
+}

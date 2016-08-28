@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+/*btn按钮的样式*/
+#caozuo{
+	padding-left:10px;
+}
+#caozuo .btn{
+	background:url(../../images/admin/btn1.png) left top no-repeat;
+	display:inline-block;
+	height:28px;
+	line-height:28px;
+	padding-left:10px;
+	cursor:pointer;
+}
+#caozuo .btn .btnin{
+	background:url(../../images/admin/btn1.png) right top no-repeat;
+	display:inline-block;
+	height:28px;
+	line-height:28px;
+	padding-right:10px;
+}
+#caozuo .btn:hover{
+	background:url(../../images/admin/btn1.png) left -36px no-repeat;
+}
+#caozuo .btn:hover .btnin{
+	background:url(../../images/admin/btn1.png) right -36px no-repeat;
+}
+#admin_body .list_content{
+	width:100%;
+}
+#admin_body .list_content thead th{
+	text-align:left;
+}
+#admin_body .list_content .edit_item{
+	display:inline-block;
+	padding:2px 5px;
+}
+#admin_body .list_content .edit_item:hover{
+	background-color:#666;
+}

@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+#main_body{
+	padding-top:2px;
+}
+.ui_content_right .wantedbuy_info{
+	padding:20px 0 0 20px;
+}
+.ui_content_right .wantedbuy_info td{
+	font-weight:bold;
+	font-size:15px;
+	text-align:right;
+	height:35px;
+	vertical-align: top;
+}
+.ui_content_right .wantedbuy_info td+td{
+	text-align:left;
+	font-weight:500;
+	padding-left:3px;
+}
+.ui_content_right .wantedbuy_info td .content_way li{
+	margin:3px 0;
+}
+.ui_content_right .wantedbuy_info td span.caption{
+	width:38px;
+	text-align:right;
+}
+.ui_content_right .wantedbuy_info td span.detail{
+	color:#b51212;
+	font-size:16px;
+}

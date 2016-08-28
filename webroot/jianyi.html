@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<script src="public/javascript/common.js"></script>
+<link rel="stylesheet" type="text/css" href="public/css/login_register.css" />
+<link rel="stylesheet" type="text/css" href="public/javascript/formcheck/formcheck.css" />
+<script type="text/javascript">
+	import_script(["public/javascript/jianyi.js"]);
+</script>
+<title>反馈建议</title>
+</head>
+<body>
+{include file="top_logo.html"}
+<div id="main_body">
+	<div class="register_title">
+		<span class="caption">反馈意见</span>
+	</div>
+	<ul class="yijian_form_content">
+		<form name="jianyi_form">
+			<li style="margin:10px 0;">
+				<span class="label">你的联系方式</span>
+				<input name="user" type="text" />
+			</li>
+			<li style="margin:10px 0;">
+				<span class="label">你的意见</span>
+				<textarea name="detail" rows="10" cols="60"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="提交" />
+			</li>
+		</form>
+	</ul>
+</div>
+{include file="footer.html"}
+</body>
+</html>

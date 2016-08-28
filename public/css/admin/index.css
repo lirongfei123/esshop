@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+html body{
+	overflow:hidden;
+}
+#main_body{
+	width:100%;
+	height:100%;
+	background: #f4f4f4;
+}
+#left{
+	position:absolute;
+	top:0;
+	left:0;
+	width:204px;
+	height:100%;
+	background:url("../../images/admin/admin_index_left_bg.png") top left repeat;
+}
+/*logo*/
+#left .logo{
+	margin-top:25px;
+	text-align: center;
+}
+/*欢迎词*/
+#left .hello{
+	text-align: center;
+	color:#6a6767;
+}
+#left .hello span{
+	color:#fdfbfb;
+	font-size:18px;
+}
+/*导航按钮*/
+#left .btns{
+	text-align:right;
+}
+#left .btns li{
+	width:160px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin:2px 0;
+	background-color:#66ab00;
+	float:right;
+	clear:both;
+	border-bottom-left-radius:10px;
+	border-top-left-radius:10px; 
+
+}
+#left .btns li a{
+	color:#fff;
+}
+#left .btns li:hover{
+	background:#f4f4f4;
+}
+#left .btns li:hover a{
+	color:#333;
+	transition-property:all;
+	transition-duration:0.5s;
+	transition-timeing-function:ease-out;
+	
+	-webkit-transition-property:all;
+	-webkit-transition-duration:0.5s;
+	-webkit-transition-timeing-function:ease-out;
+	font-size:15px;
+	transition-delay:0s;
+}
+#right{
+	margin-left:204px;
+	height:100%;
+	overflow:hidden;
+}

@@ -1,0 +1,61 @@
+.ui_content_left .recent_scan{
+	margin-top:10px;
+	border:1px solid #ccc;
+}
+.ui_content_left .recent_scan dt{
+	height:30px;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fbfafa,endcolorstr=#d6d5d5,gradentType=0);
+	background:linear-gradient(#fbfafa,#d6d5d5);
+	background:-webkit-linear-gradient(#fbfafa,#d6d5d5);
+	background:-ms-linear-gradient(#fbfafa,#d6d5d5);
+	border-bottom:1px solid #ccc;
+	line-height:30px;
+	padding-left:10px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+.ui_content_left .recent_scan dd{
+	margin:5px 10px;
+}
+.ui_content_left .recent_scan dd a{
+	color:#333;
+	width:180px;
+}
+.ui_content_right .goods_info dl{
+	position:relative;
+	margin-left:265px;
+	min-height:255px;
+}
+.ui_content_right .goods_info dt{
+	border:1px solid #ccc;
+	width:230px;
+	height:230px;
+	padding:10px;
+	text-align:center;
+	position:absolute;
+	top:0px;
+	left:-264px;
+}
+.ui_content_right .goods_info dt img{
+	width:230px;
+	height:230px;
+}
+.ui_content_right .goods_info dd.caption{
+	font-family:"微软雅黑";
+	font-size:15px;
+}
+.ui_content_right .goods_info dd.basicinfo{
+	color:#666;
+	margin:8px 0;
+}
+.ui_content_right .goods_info dd.lianxi{
+	margin:11px 0;
+	color:#c80a0a;
+	font-size:18px;
+}
+.ui_content_right .goods_info dd.lianxi .caption{
+	color:#666;
+	font-size:12px;
+	width:40px;
+	text-align:left;
+}

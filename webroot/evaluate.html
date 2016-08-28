@@ -1,0 +1,46 @@
+<script type="text/javascript">
+import_style(["public/css/evaluate.css"]);
+import_script(["public/javascript/Tweenli.js","public/javascript/evaluate.js"]);
+</script>
+<ul id="evaluate_menu_content" class="clearfix">
+	<li class="focus_menu" onclick="tab_switch('goods_detail_display','evaluate_detail_display')">详细说明</li>
+	<li id="evaluate_button" onclick="tab_switch('evaluate_detail_display','goods_detail_display')">网友评论</li>
+	<div class="focus_elem"></div>
+</ul>
+<div class="goods_detail_display_content">
+	<div id="goods_detail_display">
+		{$result.miaoshu}
+		<br/>
+	</div>
+	<div id="evaluate_detail_display">
+		<ul>
+		{foreach $comments as $comment}
+			<li class="clearfix evaluate_item">
+				<div class="caption">
+					<a class="a_img"><img src="{$comment.user_face}" /></a>
+				</div>
+				<div class="detail">
+					<div class="person_info">
+						{$comment@index}楼:<span class="person_name">{$comment.user_id}</span>发表于<span class="time">{$comment.time}</span><a href="javascript:;" onclick="reply_evaluate(this)">回复此评论</a>
+					</div>
+					<div class="evaluate_detail">
+						{$comment.detail}
+					</div>
+				</div>
+			</li>
+		{/foreach}
+		</ul>
+		<div id="reply_evaluate_content">
+			<textarea cols="70" rows="5" id="release_replay_evaluate_value"></textarea>
+			<br />
+			<button onclick="newevaluate('reply')">发表评论</button>
+			<button onclick="this.parentNode.style.display='none';">关闭</button>
+		</div>
+		<div>
+			<textarea cols="70" rows="5" id="release_evaluate_value"></textarea>
+			<br />
+			<button onclick="newevaluate('new')">发表评论</button>
+		</div>
+	</div>
+</div>
+

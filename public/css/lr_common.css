@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.content_title{
+	padding-left:10px;
+	border-bottom:1px solid #333;
+	font-size:18px;
+	margin:2px 0 2px 0;
+}
+.ui_content{
+	padding:1px;
+}
+.ui_content_left{
+	float:left;
+}
+.ui_content_right{
+	width:776px;
+	float:right;
+}
